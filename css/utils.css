@@ -48,36 +48,14 @@
 
 
 .cards{
-    display: flex;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     gap: 24px;
-    /* flex-wrap: wrap; */
-    position: relative;
-    
-}
-.cards .left{
-    position: absolute;
-    top: 40%;
-    left: -25px;
-    padding: 10px 10px ;
-   border: 2px solid black;
-    border-radius: 50%;
-    cursor: pointer;
-    
-}
-.cards .right{
-    position: absolute;
-    top: 40%;
-    right: -25px;
-    padding: 10px 10px ;
-   border: 2px solid black;
-    border-radius: 50%;
-    cursor: pointer;
+    flex-wrap: wrap;
     
 }
 
 .card{
-    width: 350px;
     padding: 24px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -114,7 +92,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1425px;
     padding: 0 16px;
     width: 100%;
 }
